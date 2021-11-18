@@ -1,17 +1,12 @@
 import* as React from "react"
-import { Link } from "gatsby"
+import Layout from "../components/layout"
 
 const HomePage = () => {
   return(
-    <main>
-      <title>Home Page</title>
-      <h1>Welcome to my Gatsby</h1>
-      <p>I'm making a gatsby site</p>
-      <Link to="/about">
-        About Page 
-      </Link>
-    </main>
-  )  
+    <Layout pageHeading="Here is Home Page" pageTitle="Home Page">
+        This what I want people to do on the home page.
+    </Layout>
+)
 }
 
 export default HomePage
