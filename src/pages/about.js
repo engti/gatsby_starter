@@ -1,6 +1,8 @@
 import * as React from "react"
 import Layout from "../components/layout"
 
+window.dataLayer = window.dataLayer || []
+
 const AboutPage = () => {
     window.dataLayer.push({
         event: "contact view",

@@ -4,6 +4,9 @@ module.exports = {
     title: "Odds and Ends",
   },
   plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
