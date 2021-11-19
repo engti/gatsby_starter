@@ -28,8 +28,8 @@ module.exports = {
         },
   
         // Specify optional GTM environment details.
-        // gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
-        // gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
+        gtmAuth: "9vJbuLBca4dztbeMlcYmHg",
+        gtmPreview: "env-6",
         dataLayerName: "dataLayer",
   
         // Name of the event that is triggered
