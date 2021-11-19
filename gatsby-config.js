@@ -44,6 +44,13 @@ module.exports = {
         //selfHostedOrigin: "YOUR_SELF_HOSTED_ORIGIN",
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "blog",
+        path: `${__dirname}/blog`
+      }
+    }
   ],
 };
 
