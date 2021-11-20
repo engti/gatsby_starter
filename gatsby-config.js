@@ -11,7 +11,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
-        id: "GTM-523CP4T",
+        id: "GTM-KBCJTPK", //GTM-523CP4T
   
         // Include GTM in development.
         //
@@ -42,7 +42,7 @@ module.exports = {
         // Defaults to false
         enableWebVitalsTracking: true,
         // Defaults to https://www.googletagmanager.com
-        //selfHostedOrigin: "YOUR_SELF_HOSTED_ORIGIN",
+        selfHostedOrigin: "https://metrics.datasea.in",
       },
     },
     {
