@@ -29,8 +29,8 @@ module.exports = {
         },
   
         // Specify optional GTM environment details.
-        gtmAuth: "9vJbuLBca4dztbeMlcYmHg",
-        gtmPreview: "env-6",
+        //gtmAuth: "9vJbuLBca4dztbeMlcYmHg",
+        //gtmPreview: "env-6",
         dataLayerName: "dataLayer",
   
         // Name of the event that is triggered
@@ -42,7 +42,7 @@ module.exports = {
         // Defaults to false
         enableWebVitalsTracking: true,
         // Defaults to https://www.googletagmanager.com
-        selfHostedOrigin: "https://metrics.datasea.in",
+        selfHostedOrigin: "https://gtm-kbcjtpk-njc0y.uc.r.appspot.com/",
       },
     },
     {
