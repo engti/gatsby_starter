@@ -4,10 +4,10 @@ import { graphql } from 'gatsby'
 
 const BlogPage = ({data}) => {
   return (
-    <Layout pageTitle="My Blog Posts">
+    <Layout pageTitle="My Blog Posts" pageHeading="Blogs">
       <ul>
-          {data.allFile.nodes.map(node =>{
-              return <li>{node.name}</li>;
+          {data.allMdx.nodes.map(node =>{
+              return <li key={node.id}>{node.frontmatter.title} {node.frontmatter.date}</li>;
           })}
       </ul>
     </Layout>
@@ -15,13 +15,17 @@ const BlogPage = ({data}) => {
 }
 
 export const query = graphql`
-query{
-    allFile(filter: {sourceInstanceName: {eq: "blog"}}) {
+query {
+    allMdx(sort: {fields: frontmatter___date, order: ASC}) {
       nodes {
-        name
+        frontmatter {
+          date(formatString: "MMMM D, YYYY")
+          title
+        }
+        id
       }
     }
-  }  
+  }
 `
 
 
