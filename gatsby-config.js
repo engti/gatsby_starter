@@ -42,7 +42,7 @@ module.exports = {
         // Defaults to false
         enableWebVitalsTracking: true,
         // Defaults to https://www.googletagmanager.com
-        selfHostedOrigin: "https://gtm-k365z9h-zwvhn.uc.r.appspot.com", // https://gtm-kbcjtpk-njc0y.uc.r.appspot.com/
+        selfHostedOrigin: "https://metrics.datasea.in", // https://gtm-kbcjtpk-njc0y.uc.r.appspot.com/
       },
     },
     {
