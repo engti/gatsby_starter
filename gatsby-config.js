@@ -11,7 +11,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
-        id: "GTM-523CP4T", //old server side GTM-KBCJTPK client side GTM-523CP4T
+        id: "GTM-KGQXJ6C", //old server side GTM-KBCJTPK client side GTM-523CP4T
   
         // Include GTM in development.
         //
