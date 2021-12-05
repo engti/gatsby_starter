@@ -18,12 +18,24 @@ const Layout = ({pageTitle, pageHeading, children}) => {
         }
     }`);
     
-
+    // output site title onto console
     console.log(data.site.siteMetadata.title);
 
+    // creates a datalayer and inserts data into it
     useEffect(() => {
         if (typeof window !== 'undefined'){
-          window.dataLayer = window.dataLayer || [];
+          // create a new datalyer, or let it be empty
+            window.dataLayer = window.dataLayer || [];
+
+          //reset datalayer if length greater than 30
+          if(window.dataLayer.length >5){
+            window.dataLayer = []
+            /*window.dataLayer.push(function() {
+                this.reset();
+              })*/
+          }
+
+          // insert page data into datalayer
           window.dataLayer.push({
             'event': 'page_view',
             'site': data.site.siteMetadata.title,
